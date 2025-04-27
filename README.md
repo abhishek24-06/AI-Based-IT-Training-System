@@ -29,17 +29,20 @@ A web-based IT Training System that personalizes learning paths, adapts content 
 ## Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/ai-it-training-system.git
-cd ai-it-training-system
+git clone https://github.com/abhishek24-06/AI-Based-IT-Training-System.git
+cd AI-Based-IT-Training-System
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Create a `.env` file in the root directory with the following variables:
+
 ```
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/it-training-system
@@ -48,6 +51,7 @@ NODE_ENV=development
 ```
 
 4. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -68,12 +72,14 @@ ai-it-training-system/
 ## API Endpoints
 
 ### Authentication
+
 - POST /api/auth/register - Register new user
 - POST /api/auth/login - Login user
 - POST /api/auth/forgot-password - Request password reset
 - POST /api/auth/reset-password - Reset password
 
 ### Courses
+
 - GET /api/courses - Get all courses
 - GET /api/courses/:id - Get course by ID
 - POST /api/courses - Create new course (admin only)
@@ -81,6 +87,7 @@ ai-it-training-system/
 - DELETE /api/courses/:id - Delete course (admin only)
 
 ### Assessments
+
 - GET /api/assessments - Get all assessments
 - GET /api/assessments/:id - Get assessment by ID
 - POST /api/assessments - Create new assessment (admin only)
@@ -88,6 +95,7 @@ ai-it-training-system/
 - DELETE /api/assessments/:id - Delete assessment (admin only)
 
 ### User Progress
+
 - GET /api/progress - Get user progress
 - POST /api/progress - Update user progress
 - GET /api/recommendations - Get personalized recommendations
@@ -109,4 +117,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Material-UI for the UI components
 - MongoDB for the database
 - Express.js for the backend framework
-- React.js for the frontend framework 
+- React.js for the frontend framework
